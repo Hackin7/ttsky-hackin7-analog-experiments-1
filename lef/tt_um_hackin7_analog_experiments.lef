@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_analog_example
+MACRO tt_um_hackin7_analog_experiments
   CLASS BLOCK ;
-  FOREIGN tt_um_analog_example ;
+  FOREIGN tt_um_hackin7_analog_experiments ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -37,6 +37,7 @@ MACRO tt_um_analog_example
     PORT
       LAYER met4 ;
         RECT 151.810 0.000 152.710 1.000 ;
+        RECT 131.780 -0.570 154.090 0.000 ;
     END
   END ua[0]
   PIN ua[1]
@@ -431,6 +432,20 @@ MACRO tt_um_analog_example
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
-END tt_um_analog_example
+  OBS
+      LAYER met4 ;
+        RECT 53.860 129.100 57.380 165.970 ;
+        RECT 112.580 130.970 114.700 165.270 ;
+        RECT 49.320 100.880 49.325 100.885 ;
+        RECT 48.690 81.420 51.040 91.980 ;
+        RECT 125.970 81.420 128.320 91.280 ;
+        RECT 48.690 80.940 128.320 81.420 ;
+        RECT 49.160 78.360 128.320 80.940 ;
+        RECT 131.780 1.000 154.090 1.480 ;
+        RECT 131.780 0.000 132.490 1.000 ;
+        RECT 133.390 0.000 151.810 1.000 ;
+        RECT 152.710 0.000 154.090 1.000 ;
+  END
+END tt_um_hackin7_analog_experiments
 END LIBRARY
 
